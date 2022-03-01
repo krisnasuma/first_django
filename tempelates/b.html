@@ -1,0 +1,13 @@
+{% extends 'navigasi.html' %}
+
+{% block content %}
+
+    <h1>Hello World</h1>
+    <p>BBBBBBBBBBBB</p>
+    <p>Daftar Teman</p>
+
+    {% for friend in all_friends %}
+        <p>{{ friend.name }} - {{ friend.age }}</p>
+    {% endfor %}
+
+{% endblock %}   
